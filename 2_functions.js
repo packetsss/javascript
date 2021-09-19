@@ -54,12 +54,13 @@ function cvtBinary(str) {
 
 
 // anonymous function
-const square = (x) => x * x
+const square = x => x * x
 // console.log(square(12))
+console.log((x => x ** 3)(4)) // directly calling the function instead of assigning it
 
 let newArr = [0, 1, 8.1, 2.12, 3, -2, 1, 15, -9.8, 8]
 const squareNonzeroInt = (arr) => {
-    return arr.filter(i => Number.isInteger(i) && i > 0).map(x => x * x) // filter and map are built-in array methods
+    return arr.filter(x => Number.isInteger(x) && x > 0).map(x => x * x) // filter and map are built-in array methods
 }
 // console.log(squareNonzeroInt(newArr))
 
