@@ -1,0 +1,138 @@
+<!-- Tags -->
+<!-- Normal tags are in pairs -->
+<h1></h1>
+
+<!-- self closing tag -->
+<br />
+<!-- <br> fine in html5 -->
+
+<!-- structure -->
+<!DOCTYPE html>
+<!-- For html 5 (easiest) -->
+<html>
+  <head>
+    <!-- Page title, css, .... -->
+    <title>HTML Tutorial</title>
+    <!-- ctrl-u for src code in browser -->
+  </head>
+  <body>
+    <a href="semantic_tag.html">go to blog</a>
+    <hr />
+    <!-- actual markups in the browser -->
+    <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <p>paragraph tag <strong> (bold)</strong></p>
+    <p>
+      <em>italic/emphasis</em><br />
+      <a href="https://www.google.com" , target="_blank"
+        >a link to open a new page</a
+      >
+    </p>
+
+    <!-- 
+    block level: <div>, <h1> - <h6>, <p>, <form>
+    inline level: <span>, <img>, <a>
+
+     -->
+    <!-- lists -->
+    <ul>
+      a list
+      <li>item</li>
+      <li>item</li>
+    </ul>
+
+    <ol>
+      ordered list
+      <li>item</li>
+      <li>item</li>
+    </ol>
+
+    <!-- table -->
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>email</th>
+          <th>age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>aj</td>
+          <td>asdad@asasd</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>asd</td>
+          <td>yuo@dsafg</td>
+          <td>74</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <!-- horizontal line break-->
+    <br />
+
+    <!-- form -->
+    <form action="a page" method="POST">
+      <div>
+        <label>name</label>
+        <input type="text" name="name" placeholder="enter first name" />
+      </div>
+      <br />
+      <div>
+        <label>email</label>
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label>message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label>select</label>
+        <select name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>age</label>
+        <input type="number" name="age" value="30" />
+      </div>
+      <br />
+      <div>
+        <label>date</label>
+        <input type="date" name="date" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <!-- button -->
+    <button>Goof</button>
+    <br />
+    <br />
+
+    <!-- image -->
+    <img src="http://placehold.it/200" alt="placeholder image" width="100" />
+    <!-- height is auto if not specified-->
+
+    <!-- Quotations -->
+    <blockquote cite="https://packetsss.live">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, delectus.
+    </blockquote>
+    <abbr title="lig">loaf is goof</abbr>
+    <p><cite>cite is italic</cite></p>
+  </body>
+</html>

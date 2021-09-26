@@ -1,0 +1,266 @@
+/* 
+Inline CSS
+Directly in html (bad)
+
+Internal CSS
+using style tags within a single element
+
+External CSS
+linking external .css file
+
+    a           {      background-color :     yellow           ;                 }
+selector declaration-start property separator value declaration-separator declaration-end
+
+Colors
+- color names
+- html5 color names
+- hexadecimal
+- rgb
+
+Fonts
+- web safe fonts (built in)
+- other fonts (import)
+- serif is more sharp and sans serif is more rounded
+
+Box Model
+(top, right, bottom, left for 4; top-bottom, right-left for 2; everything for 1)
+- padding: area from content to it's border
+- border: the border box
+- margin: area outside the border 
+
+Positioning
+- static
+  - default (in order)
+  - not affected by the top, bottom, left, and right properties
+
+- relative
+  - relative to normal position (can add paddings)
+  - Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+- absolute
+  - positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+- fixed
+  - positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+  - fixed element does not leave a gap in the page where it would normally have been located.
+
+- sticky
+  - positioned based on the user's scroll position
+  - A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+- initial:
+  - sets property to default
+
+- inherit:
+  - inherit it's parent element
+
+
+
+*/
+
+/*
+Reset for all elements
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+
+body {
+  background-color: #f4f4f4;
+  color: #555555;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  /* same as above */
+  font: normal 16px arial, helvetica, sans-serif;
+
+  /* units: em (for line heights), px */
+  line-height: 1.6em;
+  margin: 0;
+  padding-bottom: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* states for a tags */
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+/* a:visited {
+  color: black;
+} */
+
+.container {
+  width: 80%; /* use % to make it responsive */
+  margin: auto; /* spacing around element, same margin on each sides */
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background: red;
+  color: #fff;
+}
+
+/* clear any floats above it */
+.clr {
+  clear: both;
+}
+
+/* to target a class */
+.box-1 {
+  background-color: #333; /* short for #333333 */
+  color: #fff;
+
+  border: 5px red solid; /* size, color, style*/
+  border-bottom-width: 3px;
+  border-top-style: dotted; /* solid, dotted, dashed, double ... */
+
+  padding: 20px;
+  margin-top: 20px 0;
+}
+
+/* change all h1 in the class */
+.box-1 h1 {
+  /* some text transformation */
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px #ccc solid;
+  padding: 10px;
+  border-radius: 15px; /* rounded borders */
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding: 0;
+  padding-left: 20px;
+  list-style: square;
+  /* list-style: none; */
+}
+
+.categories li {
+  padding-bottom: 8px;
+  border-bottom: 1px dotted #333;
+  list-style-image: url("");
+}
+
+/* form format */
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block; /* make it block instead of inline */
+}
+
+/* target only text input and textarea */
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box; /* takes everything in and then apply to width */
+}
+
+/* for id */
+#main-block {
+  float: left;
+  width: 70%;
+}
+
+#side-bar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000;
+  margin-top: 30px;
+  position: relative;
+
+  /* add bg image */
+  background-image: url("./bg.jpg");
+  background-size: 100%; /* resize image to fit */
+  background-position: 100px center;
+  background-repeat: no-repeat;
+}
+
+.p-box h1 {
+  position: absolute; /* must have position relative parent to settle within the box */
+  top: 40px;
+  left: 200px;
+}
+
+.p-box h2 {
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+}
+
+.fix-me {
+  /* always shows in the same position in the window */
+  position: fixed;
+  top: 300px;
+}
+
+/* Pseudo class */
+.my-list li:first-child {
+  background: red;
+}
+.my-list li:nth-child(5) {
+  background: yellowgreen;
+}
+.my-list li:last-child {
+  background: burlywood;
+}
+
+.my-list li:nth-child(even) {
+  background: gray;
+}
