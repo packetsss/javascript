@@ -75,7 +75,7 @@ body {
   font-size: 16px;
   font-weight: normal;
   /* same as above */
-  font: normal 16px arial, helvetica, sans-serif;
+  font: normal 16px Arial, Helvetica, sans-serif;
 
   /* units: em (for line heights), px */
   line-height: 1.6em;
@@ -92,9 +92,11 @@ a {
 a:hover {
   color: red;
 }
+
 a:active {
   color: green;
 }
+
 /* a:visited {
   color: black;
 } */
@@ -113,7 +115,7 @@ a:active {
 
 .button:hover {
   background: red;
-  color: #fff;
+  color: rgb(161, 250, 120);
 }
 
 /* clear any floats above it */
@@ -155,7 +157,7 @@ a:active {
 .categories {
   border: 1px #ccc solid;
   padding: 10px;
-  border-radius: 15px; /* rounded borders */
+  border-radius: 40px; /* rounded borders */
 }
 
 .categories h2 {
@@ -178,10 +180,12 @@ a:active {
 /* form format */
 .my-form {
   padding: 20px;
+  border: 1px red solid;
 }
 
 .my-form .form-group {
   padding-bottom: 15px;
+  
 }
 
 .my-form label {
@@ -191,6 +195,7 @@ a:active {
 /* target only text input and textarea */
 .my-form input[type="text"],
 .my-form textarea {
+  font: 10px green Arial, Helvetica, sans-serif;
   padding: 8px;
   width: 100%;
 }

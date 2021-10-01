@@ -1,3 +1,17 @@
+// function or class for object 
+class Person {
+    constructor(d){
+    this.d = new Date(d)}
+}
+function Person2(d) {
+    this.d = new Date(d)
+}
+
+// must use "New" for an object
+let p = new Person("3-6-1970")
+let q = new Person2("3-6-1970")
+console.log(p.d, q.d)
+
 // create function inside an object
 const myObj = {
     a: 1,

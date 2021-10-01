@@ -1,10 +1,7 @@
 /*
 Run in terminal:
 node index.js
-*/
 
-
-/*
 Variable cannot be a reserved name
 if, let, const...
 
@@ -17,6 +14,7 @@ String, Number, Boolean, undefined, null
 Reference Types
 Object (dictionary?), Array, Function
 */
+
 const aConstantNumber = 2.2; // cannot reassign or change a constant
 const mutableArr = [2, 4, 3, 6];
 mutableArr[0] = 99; // but we can change values within a const
