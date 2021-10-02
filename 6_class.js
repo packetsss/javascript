@@ -1,5 +1,5 @@
 // function or class for object 
-class Person {
+class Person1 {
     constructor(d){
     this.d = new Date(d)}
 }
@@ -8,7 +8,7 @@ function Person2(d) {
 }
 
 // must use "New" for an object
-let p = new Person("3-6-1970")
+let p = new Person1("3-6-1970")
 let q = new Person2("3-6-1970")
 console.log(p.d, q.d)
 
@@ -40,3 +40,6 @@ class Person {
 let person = new Person("Jason", 12, true);
 console.log(person)
 console.log(person.name);
+
+person.name = "Jeff"
+console.log(person.name, person._age, person._isGoof)

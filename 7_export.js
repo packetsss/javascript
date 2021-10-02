@@ -1,6 +1,7 @@
 // ways to export
 export const capFirstChar = (str) => str[0].toUpperCase() + str.slice(1);
 
+const notAccessible = "not!"
 const foo = "Hey"
 const bar = "ne haoooo"
 const capStr = (str) => str.toUpperCase();

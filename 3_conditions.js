@@ -47,3 +47,5 @@ let a = 2;
 let b = 3;
 let c = "2";
 a === b ? console.log("equal") : (a == c ? console.log("not equal") : console.log("completely not equal")); // we can nest ternary operator
+
+
