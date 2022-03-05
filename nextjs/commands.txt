@@ -1,0 +1,5 @@
+// create app
+npx create-next-app --use-npm
+
+// start development server
+npm run dev
