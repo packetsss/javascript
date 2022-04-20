@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Arcade";
+    src: url("../assets/font/ARCADE.TTF");
+}
+
+.body {
+    margin: 0
+}
+
+.useFont {
+    font-family: "Arcade";
+    /* make sure to set it visible */
+    font-size: 0pt;
+    padding: 0;
+    margin: 0
+}
+
+#test {
+    display: inline-block;
+    position: fixed;
+    margin: 50px 0px 0px 50px;
+    font-size: 20px;
+    color: #fff;
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Arcade";
+    src: url("../assets/font/ARCADE.TTF");
+}
+
+.useFont {
+    font-family: "Arcade";
+    /* make sure to set it visible */
+    font-size: 0pt;
+}
